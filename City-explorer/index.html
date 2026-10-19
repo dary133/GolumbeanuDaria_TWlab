@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <!-- Permite folosirea diacriticelor -->
+    <meta charset="UTF-8">
+
+    <!-- Ajuta pagina sa se adapteze pe telefon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titlul care apare in tab-ul browserului -->
+    <title>City Explorer</title>
+
+    <!-- Leaga pagina HTML de fisierul CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Partea de sus a paginii -->
+    <header class="site-header">
+
+        <!-- Titlul principal al site-ului -->
+        <h1>City Explorer</h1>
+
+        <!-- Meniul de navigare -->
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Continutul principal al paginii -->
+    <main>
+
+        <!-- Sectiunea cu destinatii -->
+        <section id="destinatii">
+
+            <h2>Destinații</h2>
+
+            <!-- Container pentru cardurile cu destinatii -->
+            <div class="destination-grid">
+
+                <!-- Card pentru Lisabona -->
+                <article class="card featured">
+
+                    <h3>Lisabona</h3>
+
+                    <p><strong>Țară:</strong> Portugalia</p>
+
+                    <p>
+                        Lisabona este cunoscută pentru străzile sale
+                        pitorești, tramvaiele istorice, clădirile
+                        colorate și priveliștile asupra oceanului.
+                    </p>
+
+                    <p><strong>Durată recomandată:</strong> 4 zile</p>
+
+                </article>
+
+
+                <!-- Card pentru Cluj-Napoca -->
+                <article class="card">
+
+                    <h3>Cluj-Napoca</h3>
+
+                    <p><strong>Țară:</strong> România</p>
+
+                    <p>
+                        Cluj-Napoca este un oraș universitar modern,
+                        cunoscut pentru centrul său istoric,
+                        evenimentele culturale și atmosfera animată.
+                    </p>
+
+                    <p><strong>Durată recomandată:</strong> 2 zile</p>
+
+                </article>
+
+
+                <!-- Card pentru Porto -->
+                <article class="card">
+
+                    <h3>Porto</h3>
+
+                    <p><strong>Țară:</strong> Portugalia</p>
+
+                    <p>
+                        Porto este un oraș cu arhitectură tradițională,
+                        clădiri colorate, poduri impresionante peste
+                        râul Douro și un centru istoric pitoresc.
+                    </p>
+
+                    <p><strong>Durată recomandată:</strong> 3 zile</p>
+
+                </article>
+
+
+                <!-- Card pentru Brasov -->
+                <article class="card">
+
+                    <h3>Brașov</h3>
+
+                    <p><strong>Țară:</strong> România</p>
+
+                    <p>
+                        Brașov este un oraș medieval situat la poalele
+                        munților, cunoscut pentru Piața Sfatului,
+                        Biserica Neagră și peisajele montane.
+                    </p>
+
+                    <p><strong>Durată recomandată:</strong> 2 zile</p>
+
+                </article>
+
+
+                <!-- Card pentru Kyoto -->
+                <article class="card">
+
+                    <h3>Kyoto</h3>
+
+                    <p><strong>Țară:</strong> Japonia</p>
+
+                    <p>
+                        Kyoto este renumit pentru templele tradiționale,
+                        grădinile japoneze, cartierele istorice și
+                        cultura autentică a Japoniei.
+                    </p>
+
+                    <p><strong>Durată recomandată:</strong> 6 zile</p>
+
+                </article>
+
+
+                <!-- Card pentru Tokyo -->
+                <article class="card">
+
+                    <h3>Tokyo</h3>
+
+                    <p><strong>Țară:</strong> Japonia</p>
+
+                    <p>
+                        Tokyo combină tehnologia modernă cu templele
+                        tradiționale, cartierele animate, grădinile
+                        și cultura urbană japoneză.
+                    </p>
+
+                    <p><strong>Durată recomandată:</strong> 5 zile</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sectiunea pentru planificarea excursiei -->
+        <section id="planifica">
+
+            <h2>Planifică o excursie</h2>
+
+            <!-- Formular pentru alegerea excursiei -->
+            <form class="trip-form">
+
+                <!-- Camp pentru nume -->
+                <label for="name">Nume</label>
+
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                >
+
+
+                <!-- Lista pentru alegerea destinatiei -->
+                <label for="destination">Destinație</label>
+
+                <select id="destination" name="destination">
+
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Cluj-Napoca">Cluj-Napoca</option>
+                    <option value="Porto">Porto</option>
+                    <option value="Brașov">Brașov</option>
+                    <option value="Kyoto">Kyoto</option>
+                    <option value="Tokyo">Tokyo</option>
+
+                </select>
+
+
+                <!-- Camp pentru numarul de zile -->
+                <label for="days">Număr de zile</label>
+
+                <input
+                    id="days"
+                    name="days"
+                    type="number"
+                >
+
+
+                <!-- Butonul formularului -->
+                <button type="submit">
+                    Planifică excursia
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Sectiunea cu recomandari -->
+        <section id="recomandari">
+
+            <h2>Recomandări</h2>
+
+            <!-- Lista cu sfaturi pentru calatorie -->
+            <ul>
+                <li>Verifică vremea înainte de plecare.</li>
+                <li>Rezervă cazarea și transportul din timp.</li>
+                <li>Planifică principalele obiective turistice.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <!-- Partea de jos a paginii -->
+    <footer class="site-footer">
+
+        <p>Golumbeanu Daria, 2026</p>
+
+    </footer>
+
+</body>
+
+</html>

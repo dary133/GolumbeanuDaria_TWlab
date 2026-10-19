@@ -1,0 +1,17 @@
+# AI Usage Log – Laboratory 2
+
+**AI Tool:** ChatGPT
+
+**Purpose:** To better understand the concepts and requirements presented in Laboratory 2 – Vite and Modern JavaScript.
+
+## How AI was used
+
+ChatGPT was used to clarify the laboratory instructions and explain JavaScript concepts, including:
+
+- Setting up a Vite project with React and JavaScript.
+- Understanding the project structure and the use of import/export.
+- Understanding how `map()`, `filter()`, and `reduce()` work.
+- Understanding how to modify arrays without changing the original data.
+- Understanding `async/await`, `fetch()`, and error handling.
+
+ChatGPT also provided code examples and guidance for implementing the exercises and checking the results in the browser console.
