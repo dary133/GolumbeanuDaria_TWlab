@@ -1,0 +1,25 @@
+
+import DestinatieCard from './DestinatieCard.jsx';
+
+export default function ListaDestinatii({ destinatii, onToggle, onDelete }) {
+    if (destinatii.length === 0) {
+        return (
+            <p className="info">
+                Nu exista nicio destinatie.
+            </p>
+        );
+    }
+
+    return (
+        <div className="lista">
+            {destinatii.map((destinatie) => (
+                <DestinatieCard
+                    key={destinatie.id}
+                    destinatie={destinatie}
+                    onToggle={onToggle}
+                    onDelete={onDelete}
+                />
+            ))}
+        </div>
+    );
+}
