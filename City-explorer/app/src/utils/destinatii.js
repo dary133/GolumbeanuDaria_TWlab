@@ -1,60 +1,16 @@
+export const getNevizitate = (list) =>
+  list.filter((d) => !d.vizitat)
 
-/* Exercitiul 1 */
+export const totalZile = (list) =>
+  list.reduce((total, d) => total + d.zile, 0)
 
-// Extrage numele oraselor
-export const getOrase = (list) => {
-    return list.map((d) => d.oras);
-};
+export const marcheazaVizitat = (list, id) =>
+  list.map((d) =>
+    d.id === id ? { ...d, vizitat: !d.vizitat } : d
+  )
 
-// Selecteaza destinatiile nevizitate
-export const getNevizitate = (list) => {
-    return list.filter((d) => d.vizitat === false);
-};
+export const adaugaDestinatie = (list, destinatie) =>
+  [...list, destinatie]
 
-// Calculeaza numarul total de zile
-export const totalZile = (list) => {
-    return list.reduce((total, d) => total + d.zile, 0);
-};
-
-// Formateaza informatiile unei destinatii
-export const formatDestinatie = ({ oras, tara, zile, vizitat }) => {
-    return `[${vizitat ? 'x' : ' '}] ${oras}, ${tara} (${zile} zile)`;
-};
-
-// Numara destinatiile din fiecare tara
-export const numarPeTara = (list) => {
-    return list.reduce(
-        (acc, { tara }) => ({
-            ...acc,
-            [tara]: (acc[tara] ?? 0) + 1
-        }),
-        {}
-    );
-};
-
-// Sorteaza descrescator dupa numarul de zile
-export const sortDupaZile = (list) => {
-    return [...list].sort((a, b) => b.zile - a.zile);
-};
-
-
-/* Exercitiul 2 */
-
-// Inverseaza starea vizitat pentru o destinatie
-export const marcheazaVizitat = (list, id) => {
-    return list.map((d) =>
-        d.id === id
-            ? { ...d, vizitat: !d.vizitat }
-            : d
-    );
-};
-
-// Adauga o destinatie intr-o lista noua
-export const adaugaDestinatie = (list, d) => {
-    return [...list, d];
-};
-
-// Sterge destinatia cu ID-ul primit
-export const stergeDestinatie = (list, id) => {
-    return list.filter((d) => d.id !== id);
-};
+export const nr = (n, cuvant) =>
+  (n % 100 >= 20 ? `${n} de ${cuvant}` : `${n} ${cuvant}`)
